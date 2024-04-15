@@ -225,10 +225,10 @@ def detect(opt, stframe, car, bus, truck, motor, line, fps_rate, class_id):
                 distance_height = 100
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 fontScale = 2
-                # cv2.putText(im0, 'car: ' + str(len(data_car)), org, font, fontScale, color_car, thickness, cv2.LINE_AA)
-                # cv2.putText(im0, 'bus: ' + str(len(data_bus)), (org[0], org[1] + distance_height), font, fontScale, color_bus, thickness, cv2.LINE_AA)
-                # cv2.putText(im0, 'truck: ' + str(len(data_truck)), (org[0], org[1] + distance_height*2), font, fontScale, color_truck, thickness, cv2.LINE_AA)
-                # cv2.putText(im0, 'motor: ' + str(len(data_motor)), (org[0], org[1] + distance_height*3), font, fontScale, color_motor, thickness, cv2.LINE_AA)
+                cv2.putText(im0, 'car: ' + str(len(data_car)), org, font, fontScale, color_car, thickness, cv2.LINE_AA)
+                cv2.putText(im0, 'bus: ' + str(len(data_bus)), (org[0], org[1] + distance_height), font, fontScale, color_bus, thickness, cv2.LINE_AA)
+                cv2.putText(im0, 'truck: ' + str(len(data_truck)), (org[0], org[1] + distance_height*2), font, fontScale, color_truck, thickness, cv2.LINE_AA)
+                cv2.putText(im0, 'motor: ' + str(len(data_motor)), (org[0], org[1] + distance_height*3), font, fontScale, color_motor, thickness, cv2.LINE_AA)
 
                 # cv2.imshow(str(p), im0)
                 if cv2.waitKey(1) == ord('q'):  # q to quit
