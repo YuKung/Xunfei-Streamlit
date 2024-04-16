@@ -10,7 +10,7 @@ if __name__ == '__main__':
     st.set_page_config(
     page_title="车辆计数DEMO",
     page_icon="🚗",)
-    st.write("# :rainbow[车辆计数 DEMO]🚗")
+    st.write("# :rainbow[车辆计数 DEMO] 🚗")
     st.sidebar.markdown("# :rainbow[车辆计数 DEMO简介]")
     st.sidebar.markdown("这是一个基于YOLOv5和Deepsort的车辆计数项目🏄‍♂️")
     st.sidebar.markdown("你可以自行上传视频，系统会实时计数并在统计完成时保存视频🤩")
