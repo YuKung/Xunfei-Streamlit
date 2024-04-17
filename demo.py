@@ -4,7 +4,7 @@ import cv2
 import torch
 import streamlit as st
 import os
-
+from streamlit_login_auth_ui.widgets import __login__
 
 if __name__ == '__main__':
     st.set_page_config(
@@ -16,6 +16,9 @@ if __name__ == '__main__':
     st.sidebar.markdown("你可以自行上传视频，系统会实时计数并在统计完成时保存视频🤩")
     st.sidebar.markdown("除此之外，你还可以手动选择想要统计的车辆种类，调整检测置信度与检测线位置🤗")
     st.sidebar.markdown('---') 
+    
+
+    
     # upload video
     video_file_buffer = st.sidebar.file_uploader("请上传视频", type=['mp4', 'mov', 'avi'])
 
